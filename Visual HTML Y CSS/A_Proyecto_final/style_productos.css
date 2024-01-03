@@ -1,0 +1,238 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Poppins:wght@400;500;600;700;800&family=Roboto+Slab&display=swap');
+@import 'menu/styles_main.css';
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: #1B1726;
+}
+img{
+    max-width: 100%;
+    height: 300px;
+    object-fit: cover;
+
+}
+
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.container .welcome h1{
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+    color: #E0E0E0;
+}
+.container .welcome p{
+    color: #ffffff;
+    font-size: 23px;
+    padding: 0 250px;
+    margin-bottom: 45px;
+    font-family: 'Belanosima', sans-serif;
+    text-align: center;
+}
+
+
+
+/*----------------------------------------------------------- */
+.container1{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    margin-left: auto;
+    margin-right: auto;
+}
+.container1 .card1{
+    position: relative;
+    cursor: pointer;
+}
+.card1{
+    margin-bottom: 60px;
+}
+.card1 .box{
+    width: 300px;
+    height: 200px;
+    transition: .5s;
+
+}
+.card1 .box.box1{
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+
+}
+
+.card1:hover .box.box1{
+    opacity: .5 ;
+    transform: translateY(0);
+}
+.content img{
+    width: 100%;
+    border-radius: 5mm;
+}
+.content h3{
+    border-radius: 5px;
+    position: relative;
+    top: -24px;
+    padding: 8px;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.card1 .box.box2{
+    position: relative;
+        background: #FF5A2C;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        transform: translateY(-100px);     
+}
+.card1:hover .box.box2{
+    transform: translateY(0);
+    box-shadow: 0 2px 15px 2px hsl(0, 0%, 0%);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px ;
+}
+.content p{
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+.content{
+    align-items: center;
+}
+.content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.content a:hover{
+    background: #280568;
+    color: #fff ;
+    text-decoration: underline;
+    transition:all 400ms ease-in-out;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px 0;
+}
+
+.footer-txt{
+    text-align: center;
+    margin-top: 100px;
+    border-top: 1px solid #b4b4b47e;
+    padding: 20px 0;
+}
+
+.footer-txt p{
+    color: #ffffff;
+    font-size: 20px;
+    font-family: inherit;
+}
+
+
+@media(max-width:991px){
+    .menu-vertical{
+        margin-left: 180px;
+        transform: translateY(-100px);
+        
+    }
+    .menu .navbar ul li .a_menudespl  a:hover{
+        color: #FF5A2C;
+    }
+    
+    .menu{
+        padding: 20px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #FF5A2C;
+        display: none;
+
+    }
+    .menu .navbar ul li a:hover{
+        color: #1B1726;
+    }
+    .menu .navbar ul li{
+        width: 100%;
+    }
+    h2{
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    #menu:checked ~  .navbar{
+        display: initial;
+    }
+
+    .header{
+        min-height: 54vh;
+        padding: 80px 30px 50px 30px;
+
+    }
+    .header-content{
+        margin-top: 40px;
+    }
+    .header-txt{
+        text-align: center;
+        flex-basis: 100%;
+
+    }
+    .header-txt h1{
+        font-size: 50px;
+        margin-bottom: 15px;
+    }
+    .buttons{
+        justify-content: center;
+    }
+    .container1{
+        margin-top: 60px;
+        flex-direction: column;
+    }
+    .card1{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .container1{
+        width: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+    .container .welcome p{
+        font-size: 20px;
+        padding: 0 219px;
+    }
+    
+}

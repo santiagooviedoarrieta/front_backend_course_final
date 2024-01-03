@@ -1,0 +1,326 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Poppins:wght@300&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+
+}
+.container{
+    max-width: 1000px;
+    margin: 0 auto;
+}
+.header{
+    background-image: url(spotify-brand.png);
+    background-color: rgba(0, 0, 0, 0.3);
+    background-blend-mode: darken;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    max-width: 1500px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+  }
+  .logo img {
+    height: 30px;
+    margin-left: 10px;
+  }
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+.menu .navbar ul li a:hover {
+    color: #00ed2f;
+}
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+
+
+.header-txt{
+    text-align: center;
+}
+.container .welcome h1{
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+}
+.container .welcome p{
+    color: #747474;
+    font-size: 16px;
+    padding: 0 250px;
+    margin-bottom: 45px;
+    font-family: 'Belanosima', sans-serif;
+    text-align: center;
+}
+.container1{
+    align-items: center;
+    width: 100%;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+}
+.card{
+    width: 100%;
+    margin: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+    cursor: default;
+    transition:all 400ms ease;
+
+}
+.card:hover{
+    box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
+    /*Mueve las tarjetas en el eje Y hacia arriba en un 3%*/
+    transform: translateY(-3%);
+}
+.card img{
+    width: 100%;
+    height: 210px;
+    /*Logramos que las imagenes no se modifiquen en ancho y alto*/
+    object-fit: cover;
+}
+.card .contenido{
+    padding: 15px;
+    text-align: center; 
+}
+.card .contenido p{
+    font-family: 'Poppins', sans-serif;
+    line-height: 1,5;
+    color: #6a6a6a;
+}
+.card .contenido h3{
+    font-family: 'Belanosima', sans-serif;
+    font-size: 30px;
+    font-weight: 400;
+    margin-bottom: 15px;  
+}
+.card .contenido a{
+    display: inline-block;
+    padding: 10px;
+    margin-top: 10px;
+    color: #000000;
+    background-image: linear-gradient(
+        150deg,
+        #9500ff,
+        #09f,
+        #00DDFF
+    );
+    border: 1px solid #000000;
+    ;
+    border-radius: 4px;
+    transition:all 700ms ease;
+}
+.card .contenido a:hover{
+    /*Le da un color en graduante, multicolor basicamente*/
+    background-image: linear-gradient(
+        150deg,
+        #00DDFF,
+        #09f,
+        #9500FF
+    );
+    color: #fff;
+/*Permite un efecto al pasar el mouse, parecido al smart animate de figma*/
+    transition:all 300ms ease-in;
+}
+/*-------------------------------------------------------------*/
+.container1{
+    width: 1000px;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.container1 .card1{
+    position: relative;
+    cursor: pointer;
+}
+.card1{
+    margin-bottom: 60px;
+}
+.card1 .box{
+    width: 300px;
+    height: 200px;
+    transition: .5s;
+
+}
+.card1 .box.box1{
+    position: relative;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    transform: translateY(100px);
+
+}
+.card1:hover .box.box1{
+    opacity: .5 ;
+    transform: translateY(0);
+}
+.content img{
+    width: 100%;
+    border-radius: 5mm;
+}
+.content h3{
+    border-radius: 5px;
+    position: relative;
+    top: -24px;
+    padding: 8px;
+    color: #fff;
+    background: #000;
+    text-align: center;
+    font-size: 1.5rem;
+
+}
+.card1 .box.box2{
+    position: relative;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+        box-sizing: border-box;
+        transform: translateY(-100px);     
+}
+.card1:hover .box.box2{
+    transform: translateY(0);
+    box-shadow: 0 2px 15px 2px #fff;
+}
+.content p{
+    margin: 10px 0 0 0;
+    padding: 0;
+}
+.content{
+    align-items: center;
+}
+.content a{
+    margin: 15px 0 0;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: 900;
+    color: #333;
+    padding: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+}
+.content a:hover{
+    background: #280568;
+    color: #fff ;
+    text-decoration: underline;
+    /*Permite un efecto al pasar el mouse, parecido al smart animate de figma*/
+    transition:all 400ms ease-in-out;
+}
+.container .welcome p{
+    margin-bottom: 100px;
+}
+/*-------------------------------------------------------------*/
+.musica {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+@media(max-width:1026px){
+    .container1{
+        flex-direction: column;
+    }
+    .card{
+        width: 80%;
+        margin: 20px auto 40px auto;
+        border-radius: 6px;
+        overflow: hidden;
+        background: #fff;
+        box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.2);
+        cursor: default;
+        transition:all 400ms ease;
+    }
+    .container {
+        max-width: 960px;
+    }
+    .container .welcome p{
+        color: #747474;
+        font-size: 16px;
+        padding: 0 0px;
+    }
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        margin-left: -5px;
+        width: 105%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #509f55;
+        display: none;
+
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .menu .navbar ul li a:hover {
+        color: #000;
+    }
+    .card1{
+        margin: auto;
+        margin-bottom: 40px;
+    }
+    .container1{
+        width: auto;
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+    }
+}

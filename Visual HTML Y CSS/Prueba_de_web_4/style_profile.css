@@ -1,0 +1,237 @@
+@import url('https://fonts.googleapis.com/css2?family=Mitr&family=Roboto+Slab&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    background-color: white;
+    background-image: linear-gradient(
+        150deg,
+        #9500FF,
+        #09f,
+        #00DDFF
+        
+    );
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+.header{
+    background-image: url(profile.png);
+    background-color: rgba(0, 0, 0, 0.5);
+    background-blend-mode: darken;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 70vh;
+    display: flex;
+    align-items: center;
+}
+.header h1{
+    color: #ffffff;
+    font-family: 'Roboto Slab', serif;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 50px;
+}
+.container .welcome h1{
+    font-size: 50px;
+    margin-top: 50px;
+    text-align: center;
+    font-family: 'Belanosima', sans-serif;
+}
+.container .welcome p{
+    color: #000000;
+    font-size: 16px;
+    padding: 0 250px;
+    margin-bottom: 0px;
+    font-family: 'Belanosima', sans-serif;
+    text-align: center;
+}
+
+/*----------------------------------------------------------------------*/
+.menu {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    z-index: 1000;
+    max-width: 1500px;
+}
+.logo {
+    display: flex;
+    align-items: center;
+  }
+.logo img {
+    height: 30px;
+    margin-left: 10px;
+  }
+.menu .navbar ul li {
+    position: relative;
+    float: left;
+}
+.menu .navbar ul li a {
+    font-size: 18px;
+    padding: 20px;
+    color: #fffdfc;
+    display: block;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+}
+.menu .navbar ul li a:hover {
+    color: #00ed2f;
+}
+#menu {
+    display: none;
+}
+.menu-icono{
+    width: 25px;
+}
+.menu label{
+    cursor: pointer;
+    display: none;
+}
+.informacion {
+    margin-bottom: 30px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*----------------------------------------------------------------------*/
+.container1 {
+    width: auto;
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+}
+.container1 .card .titlecard h2{
+    font-size: 30px;
+}
+.container1 .card{
+    margin: 4% 4%;
+    border-radius: 10px;
+    background-color:#fff;
+    height: 400px;
+    width: 600px;
+    transition:all 400ms ease;
+}
+.container1 .card:hover{
+    box-shadow: 15px 15px 25px rgba(0, 0, 0, 0.4);
+    /*Mueve las tarjetas en el eje Y hacia arriba en un 3%*/
+    transform: translateY(-5%);
+}
+.titlecard{
+    text-align: start;
+    padding-left: 20px;
+    padding-top: 20px;
+    font-size: 30px;
+    font-family:sans-serif;
+}
+.titlecard h3{
+
+    padding-top: 30px;
+    font-size: 25px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.titlecard p{
+    color: #424242;
+    padding-top: 20px;
+    font-size: 20px;
+}
+
+
+.dashed-divider {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .dashed-divider p + p {
+    margin-top: 10px; /* Espacio entre párrafos */
+    position: relative;
+  }
+  
+  .dashed-divider p + p::before {
+    content: "";
+    position: absolute;
+    top: -5px; /* Ajusta la posición vertical de la línea */
+    left: 0;
+    width: 90%;
+    height: 1px;
+    background-color: rgb(111, 111, 111); /* Puedes ajustar el color de la línea aquí */
+  }
+
+
+
+
+
+
+
+/*--------------------------Celular-----------------------*/
+@media (max-width:1026px) {
+    .menu{
+        padding: 30px;
+    }
+    .menu label{
+        display: initial;
+    }
+    .menu .navbar{
+        margin-left: -5px;
+        width: 105%;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        right: 0;
+        background-color: #509f55;
+        display: none;
+
+    }
+    .menu .navbar ul li {
+        width: 100%;
+    }
+    .menu .navbar ul li a:hover {
+        color: #000;
+        transition:all 150ms ease-in-out;
+    }
+    #menu:checked ~ .navbar{
+        display: initial;
+    }
+    .container1 {
+        flex-direction: column;
+        align-items: center;
+
+    }
+    
+    .container .welcome p{
+        color: #181818;
+        font-size: 16px;
+        padding: auto;
+        margin-bottom: 45px;
+        font-family: 'Belanosima', sans-serif;
+        text-align: center;
+    }
+    .card{
+        margin: auto;
+        border-radius: 10px;
+        background-color:#fff;
+        height: auto;
+        width:auto;
+    }
+    
+}
